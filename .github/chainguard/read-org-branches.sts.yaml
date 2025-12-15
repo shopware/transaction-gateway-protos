@@ -3,5 +3,5 @@ subject_pattern: repo:shopware/transaction-gateway:.*
 claim_pattern:
   workflow_ref: shopware/.*
 permissions:
-  contents: read
+  contents: write
   pull_requests: write
