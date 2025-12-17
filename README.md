@@ -402,6 +402,12 @@ func main() {
 
 ## Available Services
 
+### IAPService
+
+| RPC                    | Description                                          |
+|------------------------|------------------------------------------------------|
+| `GetInAppPlans`        | Retrieve in-app plans for a specific extension       |
+
 ### PurchasesService
 
 | RPC                    | Description                                          |
@@ -416,7 +422,7 @@ All requests **must** include these metadata headers:
 
 | Header              | Required | Description                                           |
 |---------------------|----------|-------------------------------------------------------|
-| `x-request-service` | Yes       | Service name for log correlation (e.g., "my-service") |
+| `x-request-service` | Yes      | Service name for log correlation (e.g., "my-service") |
 | `x-request-id`      | No       | Request tracing ID (auto-generated if not provided)   |
 
 ---
