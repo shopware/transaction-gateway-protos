@@ -1,10 +1,10 @@
 {
   "name": "@shopware/transaction-gateway-client",
-  "version": "0.0.0-development",
+  "version": "1.0.1",
   "main": "auth/auth.js",
   "types": "auth/auth.d.ts",
   "peerDependencies": {
-    "nice-grpc": "^2.0.0",
+    "nice-grpc": "^2.1.14",
     "long": "^5.0.0"
   }
 }
