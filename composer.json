@@ -1,6 +1,6 @@
 {
   "name": "shopware/transaction-gateway-client",
-  "version": "0.0.0-development",
+  "version": "1.0.1",
   "description": "PHP gRPC client for Transaction Gateway",
   "type": "library",
   "license": "MIT",
@@ -16,8 +16,8 @@
   "require": {
     "php": "^8.1",
     "ext-grpc": "*",
-    "grpc/grpc": "^1.57",
-    "google/protobuf": "^3.24"
+    "grpc/grpc": "^1.74",
+    "google/protobuf": "^4.33"
   }
 }
 
