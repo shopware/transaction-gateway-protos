@@ -3,8 +3,8 @@ module github.com/shopware/transaction-gateway-protos
 go 1.21
 
 require (
-	google.golang.org/grpc v1.67.1
-	google.golang.org/protobuf v1.35.1
+	google.golang.org/grpc v1.77.0
+	google.golang.org/protobuf v1.36.11
 )
 
 require (

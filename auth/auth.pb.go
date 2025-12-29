@@ -7,7 +7,7 @@
 package auth
 
 import (
-	_ "github.com/shopware/transaction-gateway/pkg/proto/go/common"
+	_ "github.com/shopware/transaction-gateway-protos/common"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	structpb "google.golang.org/protobuf/types/known/structpb"
@@ -355,8 +355,8 @@ const file_auth_auth_proto_rawDesc = "" +
 	"\fExchangeCode\x12\x19.auth.ExchangeCodeRequest\x1a\x1a.auth.ExchangeCodeResponse\x12E\n" +
 	"\fRefreshToken\x12\x19.auth.RefreshTokenRequest\x1a\x1a.auth.RefreshTokenResponse\x12K\n" +
 	"\x0eGetUserAccount\x12\x1b.auth.GetUserAccountRequest\x1a\x1c.auth.GetUserAccountResponse\x1ax\x8a\xb5\x18t\n" +
-	"\fx-request-id\x1a>Request tracing ID for distributed tracing and log correlation\"$550e8400-e29b-41d4-a716-446655440000B\x80\x01\n" +
-	"\bcom.authB\tAuthProtoP\x01Z9github.com/shopware/transaction-gateway/pkg/proto/go/auth\xa2\x02\x03AXX\xaa\x02\x04Auth\xca\x02\x04Auth\xe2\x02\x10Auth\\GPBMetadata\xea\x02\x04Authb\x06proto3"
+	"\fx-request-id\x1a>Request tracing ID for distributed tracing and log correlation\"$550e8400-e29b-41d4-a716-446655440000Bz\n" +
+	"\bcom.authB\tAuthProtoP\x01Z3github.com/shopware/transaction-gateway-protos/auth\xa2\x02\x03AXX\xaa\x02\x04Auth\xca\x02\x04Auth\xe2\x02\x10Auth\\GPBMetadata\xea\x02\x04Authb\x06proto3"
 
 var (
 	file_auth_auth_proto_rawDescOnce sync.Once

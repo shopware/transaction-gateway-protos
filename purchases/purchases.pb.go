@@ -7,7 +7,7 @@
 package purchases
 
 import (
-	_ "github.com/shopware/transaction-gateway/pkg/proto/go/common"
+	_ "github.com/shopware/transaction-gateway-protos/common"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -218,8 +218,8 @@ const file_purchases_purchases_proto_rawDesc = "" +
 	"\x10PurchasesService\x12g\n" +
 	"\x14GetPurchasesByDomain\x12&.purchases.GetPurchasesByDomainRequest\x1a'.purchases.GetPurchasesByDomainResponse\x1a\xd1\x01\x8a\xb5\x18t\n" +
 	"\fx-request-id\x1a>Request tracing ID for distributed tracing and log correlation\"$550e8400-e29b-41d4-a716-446655440000\x8a\xb5\x18U\n" +
-	"\x11x-request-service\x10\x01\x1a(Request service name for log correlation\"\x14swag-copilot-serviceB\xa3\x01\n" +
-	"\rcom.purchasesB\x0ePurchasesProtoP\x01Z>github.com/shopware/transaction-gateway/pkg/proto/go/purchases\xa2\x02\x03PXX\xaa\x02\tPurchases\xca\x02\tPurchases\xe2\x02\x15Purchases\\GPBMetadata\xea\x02\tPurchasesb\x06proto3"
+	"\x11x-request-service\x10\x01\x1a(Request service name for log correlation\"\x14swag-copilot-serviceB\x9d\x01\n" +
+	"\rcom.purchasesB\x0ePurchasesProtoP\x01Z8github.com/shopware/transaction-gateway-protos/purchases\xa2\x02\x03PXX\xaa\x02\tPurchases\xca\x02\tPurchases\xe2\x02\x15Purchases\\GPBMetadata\xea\x02\tPurchasesb\x06proto3"
 
 var (
 	file_purchases_purchases_proto_rawDescOnce sync.Once

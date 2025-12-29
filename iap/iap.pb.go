@@ -7,7 +7,7 @@
 package iap
 
 import (
-	_ "github.com/shopware/transaction-gateway/pkg/proto/go/common"
+	_ "github.com/shopware/transaction-gateway-protos/common"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	structpb "google.golang.org/protobuf/types/known/structpb"
@@ -1002,8 +1002,8 @@ const file_iap_iap_proto_rawDesc = "" +
 	"\rauthorization\x1a/Not required - uses internal M2M authentication\x92\xb5\x18n\n" +
 	"\x11x-request-service\x10\x01\x1a@Service name making the request for tracking and log correlation\"\x15SwagPurchaseInterface\x1a\xf4\x01\x8a\xb5\x18x\n" +
 	"\rauthorization\x10\x01\x1a5OAuth access token (with or without 'Bearer ' prefix)\".Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...\x8a\xb5\x18t\n" +
-	"\fx-request-id\x1a>Request tracing ID for distributed tracing and log correlation\"$550e8400-e29b-41d4-a716-446655440000By\n" +
-	"\acom.iapB\bIapProtoP\x01Z8github.com/shopware/transaction-gateway/pkg/proto/go/iap\xa2\x02\x03IXX\xaa\x02\x03Iap\xca\x02\x03Iap\xe2\x02\x0fIap\\GPBMetadata\xea\x02\x03Iapb\x06proto3"
+	"\fx-request-id\x1a>Request tracing ID for distributed tracing and log correlation\"$550e8400-e29b-41d4-a716-446655440000Bs\n" +
+	"\acom.iapB\bIapProtoP\x01Z2github.com/shopware/transaction-gateway-protos/iap\xa2\x02\x03IXX\xaa\x02\x03Iap\xca\x02\x03Iap\xe2\x02\x0fIap\\GPBMetadata\xea\x02\x03Iapb\x06proto3"
 
 var (
 	file_iap_iap_proto_rawDescOnce sync.Once

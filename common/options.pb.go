@@ -149,9 +149,9 @@ const file_common_options_proto_rawDesc = "" +
 	"\vdescription\x18\x03 \x01(\tR\vdescription\x12\x18\n" +
 	"\aexample\x18\x04 \x01(\tR\aexample:d\n" +
 	"\x10service_metadata\x12\x1f.google.protobuf.ServiceOptions\x18ц\x03 \x03(\v2\x16.common.MetadataHeaderR\x0fserviceMetadata:a\n" +
-	"\x0fmethod_metadata\x12\x1e.google.protobuf.MethodOptions\x18҆\x03 \x03(\v2\x16.common.MetadataHeaderR\x0emethodMetadataB\x8f\x01\n" +
+	"\x0fmethod_metadata\x12\x1e.google.protobuf.MethodOptions\x18҆\x03 \x03(\v2\x16.common.MetadataHeaderR\x0emethodMetadataB\x89\x01\n" +
 	"\n" +
-	"com.commonB\fOptionsProtoP\x01Z;github.com/shopware/transaction-gateway/pkg/proto/go/common\xa2\x02\x03CXX\xaa\x02\x06Common\xca\x02\x06Common\xe2\x02\x12Common\\GPBMetadata\xea\x02\x06Commonb\x06proto3"
+	"com.commonB\fOptionsProtoP\x01Z5github.com/shopware/transaction-gateway-protos/common\xa2\x02\x03CXX\xaa\x02\x06Common\xca\x02\x06Common\xe2\x02\x12Common\\GPBMetadata\xea\x02\x06Commonb\x06proto3"
 
 var (
 	file_common_options_proto_rawDescOnce sync.Once
