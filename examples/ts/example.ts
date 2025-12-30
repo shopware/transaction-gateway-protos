@@ -49,19 +49,7 @@ async function getPurchasesByDomain(): Promise<void> {
                         resolve();
                         return;
                     }
-                    if (error.code === status.UNIMPLEMENTED) {
-                        console.log('✅ gRPC client works - server does not implement this service');
-                        console.log(`   (This is expected if running against a different server)\n`);
-                        client.close();
-                        resolve();
-                        return;
-                    }
-                    if (error.code === status.UNAVAILABLE) {
-                        console.log('❌ Server unavailable - is the gRPC server running on ' + ENDPOINT + '?');
-                        client.close();
-                        resolve();
-                        return;
-                    }
+                    
                     console.error('❌ GetPurchasesByDomain failed:', error.message);
                     client.close();
                     reject(error);
