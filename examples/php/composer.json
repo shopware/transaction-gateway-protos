@@ -3,11 +3,7 @@
     "description": "Example usage of Transaction Gateway gRPC client in PHP",
     "type": "project",
     "require": {
-        "php": ">=8.3",
-        "ext-grpc": "*",
-        "shopware/transaction-gateway-client": "^1.0.0",
-        "grpc/grpc": "^1.57",
-        "google/protobuf": "^4.33"
+        "shopware/transaction-gateway-client": "^1.0.0"
     },
     "repositories": [
         {

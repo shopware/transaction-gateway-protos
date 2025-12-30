@@ -11,7 +11,6 @@ package main
 import (
 	"context"
 	"fmt"
-	"strings"
 
 	purchasesv1 "github.com/shopware/transaction-gateway-protos/purchases/v1"
 	"google.golang.org/grpc"
@@ -28,10 +27,6 @@ const (
 
 // TestGetPurchasesByDomain demonstrates how to use the PurchasesService
 func main() {
-	fmt.Println(strings.Repeat("=", 50))
-	fmt.Println("Transaction Gateway Go Example")
-	fmt.Println(strings.Repeat("=", 50))
-
 	// Create insecure connection for local development
 	conn, err := grpc.NewClient(endpoint,
 		grpc.WithTransportCredentials(insecure.NewCredentials()))
@@ -57,13 +52,14 @@ func main() {
 		})
 
 	if err != nil {
-		// Check if it's a NotFound error (expected for test domain)
 		st, ok := status.FromError(err)
+
+		// Check if it's a NotFound error (expected for test domain)
 		if ok && st.Code() == codes.NotFound {
-			fmt.Printf("✅ Connection successful - got expected NotFound for test domain\n")
 			fmt.Printf("❌ Error: %s\n", st.Message())
 			return
 		}
+
 		fmt.Printf("❌ GetPurchasesByDomain failed: %v", err)
 		return
 	}

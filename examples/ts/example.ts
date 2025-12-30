@@ -21,8 +21,6 @@ const { PurchasesServiceClient } = await import(purchasesPath);
 const ENDPOINT = 'localhost:50051';
 
 async function getPurchasesByDomain(): Promise<void> {
-    console.log('GetPurchasesByDomain...\n');
-
     return new Promise((resolve, reject) => {
         // Create insecure credentials for local development
         const creds = credentials.createInsecure();
@@ -43,7 +41,6 @@ async function getPurchasesByDomain(): Promise<void> {
                 if (error) {
                     // Check for expected errors
                     if (error.code === status.NOT_FOUND) {
-                        console.log('✅ Connection successful - got expected NotFound for test domain');
                         console.log(`❌ Error: ${error.message}\n`);
                         client.close();
                         resolve();
@@ -70,10 +67,6 @@ async function getPurchasesByDomain(): Promise<void> {
 
 // Run 
 async function main() {
-    console.log('='.repeat(50));
-    console.log('Transaction Gateway TypeScript Example\n');
-    console.log('='.repeat(50) + '\n');
-
     await getPurchasesByDomain();
 }
 

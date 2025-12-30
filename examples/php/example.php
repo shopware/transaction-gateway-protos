@@ -21,8 +21,6 @@ const ENDPOINT = 'localhost:50051';
 
 function getPurchasesByDomain(): void
 {
-    echo "GetPurchasesByDomain...\n\n";
-
     // Create insecure connection for local development
     $options = [
         'credentials' => ChannelCredentials::createInsecure(),
@@ -47,7 +45,6 @@ function getPurchasesByDomain(): void
     if ($status->code !== \Grpc\STATUS_OK) {
         // Check if it's a NotFound error (expected for test domain)
         if ($status->code === \Grpc\STATUS_NOT_FOUND) {
-            echo "✅ Connection successful - got expected NotFound for test domain\n";
             echo "❌ Error: {$status->details}\n\n";
             return;
         }
@@ -73,8 +70,4 @@ function getPurchasesByDomain(): void
 }
 
 // Run
-echo str_repeat('=', 50) . "\n";
-echo "Transaction Gateway PHP Example\n";
-echo str_repeat('=', 50) . "\n\n";
-
 getPurchasesByDomain();
