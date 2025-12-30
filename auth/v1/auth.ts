@@ -2,7 +2,7 @@
 // versions:
 //   protoc-gen-ts_proto  v2.6.1
 //   protoc               unknown
-// source: auth/auth.proto
+// source: auth/v1/auth.proto
 
 /* eslint-disable */
 import { BinaryReader, BinaryWriter } from "@bufbuild/protobuf/wire";
@@ -18,9 +18,9 @@ import {
   type ServiceError,
   type UntypedServiceImplementation,
 } from "@grpc/grpc-js";
-import { Struct } from "../google/protobuf/struct";
+import { Struct } from "../../google/protobuf/struct";
 
-export const protobufPackage = "auth";
+export const protobufPackage = "transaction.auth.v1";
 
 export interface ExchangeCodeRequest {
   authorizationCode: string;
@@ -499,7 +499,7 @@ export const AuthServiceService = {
    * This is the first step after user completes OAuth consent flow.
    */
   exchangeCode: {
-    path: "/auth.AuthService/ExchangeCode",
+    path: "/transaction.auth.v1.AuthService/ExchangeCode",
     requestStream: false,
     responseStream: false,
     requestSerialize: (value: ExchangeCodeRequest) => Buffer.from(ExchangeCodeRequest.encode(value).finish()),
@@ -512,7 +512,7 @@ export const AuthServiceService = {
    * Use this when the access token has expired but refresh token is still valid.
    */
   refreshToken: {
-    path: "/auth.AuthService/RefreshToken",
+    path: "/transaction.auth.v1.AuthService/RefreshToken",
     requestStream: false,
     responseStream: false,
     requestSerialize: (value: RefreshTokenRequest) => Buffer.from(RefreshTokenRequest.encode(value).finish()),
@@ -525,7 +525,7 @@ export const AuthServiceService = {
    * Returns user profile information from the identity provider.
    */
   getUserAccount: {
-    path: "/auth.AuthService/GetUserAccount",
+    path: "/transaction.auth.v1.AuthService/GetUserAccount",
     requestStream: false,
     responseStream: false,
     requestSerialize: (value: GetUserAccountRequest) => Buffer.from(GetUserAccountRequest.encode(value).finish()),
@@ -613,7 +613,10 @@ export interface AuthServiceClient extends Client {
   ): ClientUnaryCall;
 }
 
-export const AuthServiceClient = makeGenericClientConstructor(AuthServiceService, "auth.AuthService") as unknown as {
+export const AuthServiceClient = makeGenericClientConstructor(
+  AuthServiceService,
+  "transaction.auth.v1.AuthService",
+) as unknown as {
   new (address: string, credentials: ChannelCredentials, options?: Partial<ClientOptions>): AuthServiceClient;
   service: typeof AuthServiceService;
   serviceName: string;

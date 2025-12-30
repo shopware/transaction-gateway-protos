@@ -2,7 +2,7 @@
 // versions:
 //   protoc-gen-ts_proto  v2.6.1
 //   protoc               unknown
-// source: purchases/purchases.proto
+// source: purchases/v1/purchases.proto
 
 /* eslint-disable */
 import { BinaryReader, BinaryWriter } from "@bufbuild/protobuf/wire";
@@ -19,7 +19,7 @@ import {
   type UntypedServiceImplementation,
 } from "@grpc/grpc-js";
 
-export const protobufPackage = "purchases";
+export const protobufPackage = "transaction.purchases.v1";
 
 /** GetPurchasesByDomainRequest is the request message for GetPurchasesByDomain RPC */
 export interface GetPurchasesByDomainRequest {
@@ -304,7 +304,7 @@ export const PurchasesServiceService = {
    * The domain should be passed as a query parameter (e.g., "sw9.service.com").
    */
   getPurchasesByDomain: {
-    path: "/purchases.PurchasesService/GetPurchasesByDomain",
+    path: "/transaction.purchases.v1.PurchasesService/GetPurchasesByDomain",
     requestStream: false,
     responseStream: false,
     requestSerialize: (value: GetPurchasesByDomainRequest) =>
@@ -348,7 +348,7 @@ export interface PurchasesServiceClient extends Client {
 
 export const PurchasesServiceClient = makeGenericClientConstructor(
   PurchasesServiceService,
-  "purchases.PurchasesService",
+  "transaction.purchases.v1.PurchasesService",
 ) as unknown as {
   new (address: string, credentials: ChannelCredentials, options?: Partial<ClientOptions>): PurchasesServiceClient;
   service: typeof PurchasesServiceService;

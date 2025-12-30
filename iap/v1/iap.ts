@@ -2,7 +2,7 @@
 // versions:
 //   protoc-gen-ts_proto  v2.6.1
 //   protoc               unknown
-// source: iap/iap.proto
+// source: iap/v1/iap.proto
 
 /* eslint-disable */
 import { BinaryReader, BinaryWriter } from "@bufbuild/protobuf/wire";
@@ -18,9 +18,9 @@ import {
   type ServiceError,
   type UntypedServiceImplementation,
 } from "@grpc/grpc-js";
-import { Struct } from "../google/protobuf/struct";
+import { Struct } from "../../google/protobuf/struct";
 
-export const protobufPackage = "iap";
+export const protobufPackage = "transaction.iap.v1";
 
 export interface CalculateBasketRequest {
   extensionName: string;
@@ -1568,7 +1568,7 @@ export const IAPServiceService = {
    * Returns tax rates and itemized positions with pricing details.
    */
   calculateBasket: {
-    path: "/iap.IAPService/CalculateBasket",
+    path: "/transaction.iap.v1.IAPService/CalculateBasket",
     requestStream: false,
     responseStream: false,
     requestSerialize: (value: CalculateBasketRequest) => Buffer.from(CalculateBasketRequest.encode(value).finish()),
@@ -1581,7 +1581,7 @@ export const IAPServiceService = {
    * Requires a previously calculated basket with valid positions.
    */
   placeOrder: {
-    path: "/iap.IAPService/PlaceOrder",
+    path: "/transaction.iap.v1.IAPService/PlaceOrder",
     requestStream: false,
     responseStream: false,
     requestSerialize: (value: PlaceOrderRequest) => Buffer.from(PlaceOrderRequest.encode(value).finish()),
@@ -1594,7 +1594,7 @@ export const IAPServiceService = {
    * Returns feature configuration and pricing variants.
    */
   getInAppFeature: {
-    path: "/iap.IAPService/GetInAppFeature",
+    path: "/transaction.iap.v1.IAPService/GetInAppFeature",
     requestStream: false,
     responseStream: false,
     requestSerialize: (value: GetInAppFeatureRequest) => Buffer.from(GetInAppFeatureRequest.encode(value).finish()),
@@ -1607,7 +1607,7 @@ export const IAPServiceService = {
    * This is a public API that uses M2M authentication (no user OAuth token required).
    */
   getInAppPlans: {
-    path: "/iap.IAPService/GetInAppPlans",
+    path: "/transaction.iap.v1.IAPService/GetInAppPlans",
     requestStream: false,
     responseStream: false,
     requestSerialize: (value: GetInAppPlansRequest) => Buffer.from(GetInAppPlansRequest.encode(value).finish()),
@@ -1719,7 +1719,10 @@ export interface IAPServiceClient extends Client {
   ): ClientUnaryCall;
 }
 
-export const IAPServiceClient = makeGenericClientConstructor(IAPServiceService, "iap.IAPService") as unknown as {
+export const IAPServiceClient = makeGenericClientConstructor(
+  IAPServiceService,
+  "transaction.iap.v1.IAPService",
+) as unknown as {
   new (address: string, credentials: ChannelCredentials, options?: Partial<ClientOptions>): IAPServiceClient;
   service: typeof IAPServiceService;
   serviceName: string;

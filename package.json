@@ -1,8 +1,27 @@
 {
   "name": "@shopware/transaction-gateway-client",
-  "version": "1.2.1",
-  "main": "auth/auth.js",
-  "types": "auth/auth.d.ts",
+  "version": "1.0.0",
+  "description": "TypeScript gRPC client for Transaction Gateway",
+  "main": "auth/v1/auth.js",
+  "types": "auth/v1/auth.d.ts",
+  "exports": {
+    "./auth/v1": {
+      "types": "./auth/v1/auth.d.ts",
+      "default": "./auth/v1/auth.js"
+    },
+    "./iap/v1": {
+      "types": "./iap/v1/iap.d.ts",
+      "default": "./iap/v1/iap.js"
+    },
+    "./purchases/v1": {
+      "types": "./purchases/v1/purchases.d.ts",
+      "default": "./purchases/v1/purchases.js"
+    },
+    "./common": {
+      "types": "./common/options.d.ts",
+      "default": "./common/options.js"
+    }
+  },
   "peerDependencies": {
     "nice-grpc": "^2.1.14",
     "long": "^5.0.0"
