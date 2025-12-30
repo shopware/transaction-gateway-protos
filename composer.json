@@ -1,16 +1,15 @@
 {
   "name": "shopware/transaction-gateway-client",
-  "version": "1.2.1",
+  "version": "1.0.0",
   "description": "PHP gRPC client for Transaction Gateway",
   "type": "library",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Auth\\": "Auth/",
-      "Common\\": "Common/",
-      "Iap\\": "Iap/",
-      "GPBMetadata\\": "GPBMetadata/",
-      "Purchases\\": "Purchases/"
+      "Transaction\\Auth\\V1\\": "Transaction/Auth/V1/",
+      "Transaction\\Iap\\V1\\": "Transaction/Iap/V1/",
+      "Transaction\\Purchases\\V1\\": "Transaction/Purchases/V1/",
+      "Common\\": "Common/"
     }
   },
   "require": {
