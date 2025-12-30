@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.6.0
 // - protoc             (unknown)
-// source: purchases/purchases.proto
+// source: purchases/v1/purchases.proto
 
-package purchases
+package purchasesv1
 
 import (
 	context "context"
@@ -19,7 +19,7 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	PurchasesService_GetPurchasesByDomain_FullMethodName = "/purchases.PurchasesService/GetPurchasesByDomain"
+	PurchasesService_GetPurchasesByDomain_FullMethodName = "/transaction.purchases.v1.PurchasesService/GetPurchasesByDomain"
 )
 
 // PurchasesServiceClient is the client API for PurchasesService service.
@@ -118,7 +118,7 @@ func _PurchasesService_GetPurchasesByDomain_Handler(srv interface{}, ctx context
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var PurchasesService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "purchases.PurchasesService",
+	ServiceName: "transaction.purchases.v1.PurchasesService",
 	HandlerType: (*PurchasesServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -127,5 +127,5 @@ var PurchasesService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "purchases/purchases.proto",
+	Metadata: "purchases/v1/purchases.proto",
 }

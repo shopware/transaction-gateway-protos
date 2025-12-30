@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.6.0
 // - protoc             (unknown)
-// source: iap/iap.proto
+// source: iap/v1/iap.proto
 
-package iap
+package iapv1
 
 import (
 	context "context"
@@ -19,10 +19,10 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	IAPService_CalculateBasket_FullMethodName = "/iap.IAPService/CalculateBasket"
-	IAPService_PlaceOrder_FullMethodName      = "/iap.IAPService/PlaceOrder"
-	IAPService_GetInAppFeature_FullMethodName = "/iap.IAPService/GetInAppFeature"
-	IAPService_GetInAppPlans_FullMethodName   = "/iap.IAPService/GetInAppPlans"
+	IAPService_CalculateBasket_FullMethodName = "/transaction.iap.v1.IAPService/CalculateBasket"
+	IAPService_PlaceOrder_FullMethodName      = "/transaction.iap.v1.IAPService/PlaceOrder"
+	IAPService_GetInAppFeature_FullMethodName = "/transaction.iap.v1.IAPService/GetInAppFeature"
+	IAPService_GetInAppPlans_FullMethodName   = "/transaction.iap.v1.IAPService/GetInAppPlans"
 )
 
 // IAPServiceClient is the client API for IAPService service.
@@ -232,7 +232,7 @@ func _IAPService_GetInAppPlans_Handler(srv interface{}, ctx context.Context, dec
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var IAPService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "iap.IAPService",
+	ServiceName: "transaction.iap.v1.IAPService",
 	HandlerType: (*IAPServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -253,5 +253,5 @@ var IAPService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "iap/iap.proto",
+	Metadata: "iap/v1/iap.proto",
 }

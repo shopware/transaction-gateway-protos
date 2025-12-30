@@ -4,6 +4,9 @@
 // 	protoc        (unknown)
 // source: common/options.proto
 
+// This is a shared utility package used by all versioned services.
+// It does not contain service definitions and follows a different lifecycle.
+
 package common
 
 import (

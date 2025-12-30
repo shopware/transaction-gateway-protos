@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: purchases/purchases.proto
+// source: purchases/v1/purchases.proto
 
-package purchases
+package purchasesv1
 
 import (
 	_ "github.com/shopware/transaction-gateway-protos/common"
@@ -33,7 +33,7 @@ type GetPurchasesByDomainRequest struct {
 
 func (x *GetPurchasesByDomainRequest) Reset() {
 	*x = GetPurchasesByDomainRequest{}
-	mi := &file_purchases_purchases_proto_msgTypes[0]
+	mi := &file_purchases_v1_purchases_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -45,7 +45,7 @@ func (x *GetPurchasesByDomainRequest) String() string {
 func (*GetPurchasesByDomainRequest) ProtoMessage() {}
 
 func (x *GetPurchasesByDomainRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_purchases_purchases_proto_msgTypes[0]
+	mi := &file_purchases_v1_purchases_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -58,7 +58,7 @@ func (x *GetPurchasesByDomainRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetPurchasesByDomainRequest.ProtoReflect.Descriptor instead.
 func (*GetPurchasesByDomainRequest) Descriptor() ([]byte, []int) {
-	return file_purchases_purchases_proto_rawDescGZIP(), []int{0}
+	return file_purchases_v1_purchases_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *GetPurchasesByDomainRequest) GetDomain() string {
@@ -79,7 +79,7 @@ type GetPurchasesByDomainResponse struct {
 
 func (x *GetPurchasesByDomainResponse) Reset() {
 	*x = GetPurchasesByDomainResponse{}
-	mi := &file_purchases_purchases_proto_msgTypes[1]
+	mi := &file_purchases_v1_purchases_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -91,7 +91,7 @@ func (x *GetPurchasesByDomainResponse) String() string {
 func (*GetPurchasesByDomainResponse) ProtoMessage() {}
 
 func (x *GetPurchasesByDomainResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_purchases_purchases_proto_msgTypes[1]
+	mi := &file_purchases_v1_purchases_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -104,7 +104,7 @@ func (x *GetPurchasesByDomainResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetPurchasesByDomainResponse.ProtoReflect.Descriptor instead.
 func (*GetPurchasesByDomainResponse) Descriptor() ([]byte, []int) {
-	return file_purchases_purchases_proto_rawDescGZIP(), []int{1}
+	return file_purchases_v1_purchases_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *GetPurchasesByDomainResponse) GetPurchases() []*Purchase {
@@ -133,7 +133,7 @@ type Purchase struct {
 
 func (x *Purchase) Reset() {
 	*x = Purchase{}
-	mi := &file_purchases_purchases_proto_msgTypes[2]
+	mi := &file_purchases_v1_purchases_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -145,7 +145,7 @@ func (x *Purchase) String() string {
 func (*Purchase) ProtoMessage() {}
 
 func (x *Purchase) ProtoReflect() protoreflect.Message {
-	mi := &file_purchases_purchases_proto_msgTypes[2]
+	mi := &file_purchases_v1_purchases_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -158,7 +158,7 @@ func (x *Purchase) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Purchase.ProtoReflect.Descriptor instead.
 func (*Purchase) Descriptor() ([]byte, []int) {
-	return file_purchases_purchases_proto_rawDescGZIP(), []int{2}
+	return file_purchases_v1_purchases_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *Purchase) GetPluginName() string {
@@ -196,15 +196,15 @@ func (x *Purchase) GetPendingDowngradeIdentifier() string {
 	return ""
 }
 
-var File_purchases_purchases_proto protoreflect.FileDescriptor
+var File_purchases_v1_purchases_proto protoreflect.FileDescriptor
 
-const file_purchases_purchases_proto_rawDesc = "" +
+const file_purchases_v1_purchases_proto_rawDesc = "" +
 	"\n" +
-	"\x19purchases/purchases.proto\x12\tpurchases\x1a\x14common/options.proto\"5\n" +
+	"\x1cpurchases/v1/purchases.proto\x12\x18transaction.purchases.v1\x1a\x14common/options.proto\"5\n" +
 	"\x1bGetPurchasesByDomainRequest\x12\x16\n" +
-	"\x06domain\x18\x01 \x01(\tR\x06domain\"Q\n" +
-	"\x1cGetPurchasesByDomainResponse\x121\n" +
-	"\tpurchases\x18\x01 \x03(\v2\x13.purchases.PurchaseR\tpurchases\"\xfb\x01\n" +
+	"\x06domain\x18\x01 \x01(\tR\x06domain\"`\n" +
+	"\x1cGetPurchasesByDomainResponse\x12@\n" +
+	"\tpurchases\x18\x01 \x03(\v2\".transaction.purchases.v1.PurchaseR\tpurchases\"\xfb\x01\n" +
 	"\bPurchase\x12\x1f\n" +
 	"\vplugin_name\x18\x01 \x01(\tR\n" +
 	"pluginName\x12\x1e\n" +
@@ -214,35 +214,35 @@ const file_purchases_purchases_proto_rawDesc = "" +
 	"\x11next_booking_date\x18\x03 \x01(\tR\x0fnextBookingDate\x12\x1a\n" +
 	"\bquantity\x18\x04 \x01(\x05R\bquantity\x12E\n" +
 	"\x1cpending_downgrade_identifier\x18\x05 \x01(\tH\x00R\x1apendingDowngradeIdentifier\x88\x01\x01B\x1f\n" +
-	"\x1d_pending_downgrade_identifier2\xcf\x02\n" +
-	"\x10PurchasesService\x12g\n" +
-	"\x14GetPurchasesByDomain\x12&.purchases.GetPurchasesByDomainRequest\x1a'.purchases.GetPurchasesByDomainResponse\x1a\xd1\x01\x8a\xb5\x18t\n" +
+	"\x1d_pending_downgrade_identifier2\xee\x02\n" +
+	"\x10PurchasesService\x12\x85\x01\n" +
+	"\x14GetPurchasesByDomain\x125.transaction.purchases.v1.GetPurchasesByDomainRequest\x1a6.transaction.purchases.v1.GetPurchasesByDomainResponse\x1a\xd1\x01\x8a\xb5\x18t\n" +
 	"\fx-request-id\x1a>Request tracing ID for distributed tracing and log correlation\"$550e8400-e29b-41d4-a716-446655440000\x8a\xb5\x18U\n" +
-	"\x11x-request-service\x10\x01\x1a(Request service name for log correlation\"\x14swag-copilot-serviceB\x9d\x01\n" +
-	"\rcom.purchasesB\x0ePurchasesProtoP\x01Z8github.com/shopware/transaction-gateway-protos/purchases\xa2\x02\x03PXX\xaa\x02\tPurchases\xca\x02\tPurchases\xe2\x02\x15Purchases\\GPBMetadata\xea\x02\tPurchasesb\x06proto3"
+	"\x11x-request-service\x10\x01\x1a(Request service name for log correlation\"\x14swag-copilot-serviceB\xf9\x01\n" +
+	"\x1ccom.transaction.purchases.v1B\x0ePurchasesProtoP\x01ZGgithub.com/shopware/transaction-gateway-protos/purchases/v1;purchasesv1\xa2\x02\x03TPX\xaa\x02\x18Transaction.Purchases.V1\xca\x02\x18Transaction\\Purchases\\V1\xe2\x02$Transaction\\Purchases\\V1\\GPBMetadata\xea\x02\x1aTransaction::Purchases::V1b\x06proto3"
 
 var (
-	file_purchases_purchases_proto_rawDescOnce sync.Once
-	file_purchases_purchases_proto_rawDescData []byte
+	file_purchases_v1_purchases_proto_rawDescOnce sync.Once
+	file_purchases_v1_purchases_proto_rawDescData []byte
 )
 
-func file_purchases_purchases_proto_rawDescGZIP() []byte {
-	file_purchases_purchases_proto_rawDescOnce.Do(func() {
-		file_purchases_purchases_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_purchases_purchases_proto_rawDesc), len(file_purchases_purchases_proto_rawDesc)))
+func file_purchases_v1_purchases_proto_rawDescGZIP() []byte {
+	file_purchases_v1_purchases_proto_rawDescOnce.Do(func() {
+		file_purchases_v1_purchases_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_purchases_v1_purchases_proto_rawDesc), len(file_purchases_v1_purchases_proto_rawDesc)))
 	})
-	return file_purchases_purchases_proto_rawDescData
+	return file_purchases_v1_purchases_proto_rawDescData
 }
 
-var file_purchases_purchases_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
-var file_purchases_purchases_proto_goTypes = []any{
-	(*GetPurchasesByDomainRequest)(nil),  // 0: purchases.GetPurchasesByDomainRequest
-	(*GetPurchasesByDomainResponse)(nil), // 1: purchases.GetPurchasesByDomainResponse
-	(*Purchase)(nil),                     // 2: purchases.Purchase
+var file_purchases_v1_purchases_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
+var file_purchases_v1_purchases_proto_goTypes = []any{
+	(*GetPurchasesByDomainRequest)(nil),  // 0: transaction.purchases.v1.GetPurchasesByDomainRequest
+	(*GetPurchasesByDomainResponse)(nil), // 1: transaction.purchases.v1.GetPurchasesByDomainResponse
+	(*Purchase)(nil),                     // 2: transaction.purchases.v1.Purchase
 }
-var file_purchases_purchases_proto_depIdxs = []int32{
-	2, // 0: purchases.GetPurchasesByDomainResponse.purchases:type_name -> purchases.Purchase
-	0, // 1: purchases.PurchasesService.GetPurchasesByDomain:input_type -> purchases.GetPurchasesByDomainRequest
-	1, // 2: purchases.PurchasesService.GetPurchasesByDomain:output_type -> purchases.GetPurchasesByDomainResponse
+var file_purchases_v1_purchases_proto_depIdxs = []int32{
+	2, // 0: transaction.purchases.v1.GetPurchasesByDomainResponse.purchases:type_name -> transaction.purchases.v1.Purchase
+	0, // 1: transaction.purchases.v1.PurchasesService.GetPurchasesByDomain:input_type -> transaction.purchases.v1.GetPurchasesByDomainRequest
+	1, // 2: transaction.purchases.v1.PurchasesService.GetPurchasesByDomain:output_type -> transaction.purchases.v1.GetPurchasesByDomainResponse
 	2, // [2:3] is the sub-list for method output_type
 	1, // [1:2] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name
@@ -250,27 +250,27 @@ var file_purchases_purchases_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_purchases_purchases_proto_init() }
-func file_purchases_purchases_proto_init() {
-	if File_purchases_purchases_proto != nil {
+func init() { file_purchases_v1_purchases_proto_init() }
+func file_purchases_v1_purchases_proto_init() {
+	if File_purchases_v1_purchases_proto != nil {
 		return
 	}
-	file_purchases_purchases_proto_msgTypes[2].OneofWrappers = []any{}
+	file_purchases_v1_purchases_proto_msgTypes[2].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_purchases_purchases_proto_rawDesc), len(file_purchases_purchases_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_purchases_v1_purchases_proto_rawDesc), len(file_purchases_v1_purchases_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   3,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_purchases_purchases_proto_goTypes,
-		DependencyIndexes: file_purchases_purchases_proto_depIdxs,
-		MessageInfos:      file_purchases_purchases_proto_msgTypes,
+		GoTypes:           file_purchases_v1_purchases_proto_goTypes,
+		DependencyIndexes: file_purchases_v1_purchases_proto_depIdxs,
+		MessageInfos:      file_purchases_v1_purchases_proto_msgTypes,
 	}.Build()
-	File_purchases_purchases_proto = out.File
-	file_purchases_purchases_proto_goTypes = nil
-	file_purchases_purchases_proto_depIdxs = nil
+	File_purchases_v1_purchases_proto = out.File
+	file_purchases_v1_purchases_proto_goTypes = nil
+	file_purchases_v1_purchases_proto_depIdxs = nil
 }

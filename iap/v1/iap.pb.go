@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: iap/iap.proto
+// source: iap/v1/iap.proto
 
-package iap
+package iapv1
 
 import (
 	_ "github.com/shopware/transaction-gateway-protos/common"
@@ -37,7 +37,7 @@ type CalculateBasketRequest struct {
 
 func (x *CalculateBasketRequest) Reset() {
 	*x = CalculateBasketRequest{}
-	mi := &file_iap_iap_proto_msgTypes[0]
+	mi := &file_iap_v1_iap_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -49,7 +49,7 @@ func (x *CalculateBasketRequest) String() string {
 func (*CalculateBasketRequest) ProtoMessage() {}
 
 func (x *CalculateBasketRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[0]
+	mi := &file_iap_v1_iap_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -62,7 +62,7 @@ func (x *CalculateBasketRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CalculateBasketRequest.ProtoReflect.Descriptor instead.
 func (*CalculateBasketRequest) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{0}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *CalculateBasketRequest) GetExtensionName() string {
@@ -117,7 +117,7 @@ type CalculateBasketResponse struct {
 
 func (x *CalculateBasketResponse) Reset() {
 	*x = CalculateBasketResponse{}
-	mi := &file_iap_iap_proto_msgTypes[1]
+	mi := &file_iap_v1_iap_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -129,7 +129,7 @@ func (x *CalculateBasketResponse) String() string {
 func (*CalculateBasketResponse) ProtoMessage() {}
 
 func (x *CalculateBasketResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[1]
+	mi := &file_iap_v1_iap_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -142,7 +142,7 @@ func (x *CalculateBasketResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CalculateBasketResponse.ProtoReflect.Descriptor instead.
 func (*CalculateBasketResponse) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{1}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *CalculateBasketResponse) GetTaxRate() float64 {
@@ -176,7 +176,7 @@ type BasketPosition struct {
 
 func (x *BasketPosition) Reset() {
 	*x = BasketPosition{}
-	mi := &file_iap_iap_proto_msgTypes[2]
+	mi := &file_iap_v1_iap_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -188,7 +188,7 @@ func (x *BasketPosition) String() string {
 func (*BasketPosition) ProtoMessage() {}
 
 func (x *BasketPosition) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[2]
+	mi := &file_iap_v1_iap_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -201,7 +201,7 @@ func (x *BasketPosition) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BasketPosition.ProtoReflect.Descriptor instead.
 func (*BasketPosition) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{2}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *BasketPosition) GetExtensionName() string {
@@ -277,7 +277,7 @@ type SubscriptionChange struct {
 
 func (x *SubscriptionChange) Reset() {
 	*x = SubscriptionChange{}
-	mi := &file_iap_iap_proto_msgTypes[3]
+	mi := &file_iap_v1_iap_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -289,7 +289,7 @@ func (x *SubscriptionChange) String() string {
 func (*SubscriptionChange) ProtoMessage() {}
 
 func (x *SubscriptionChange) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[3]
+	mi := &file_iap_v1_iap_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -302,7 +302,7 @@ func (x *SubscriptionChange) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SubscriptionChange.ProtoReflect.Descriptor instead.
 func (*SubscriptionChange) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{3}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *SubscriptionChange) GetType() string {
@@ -332,7 +332,7 @@ type PlaceOrderRequest struct {
 
 func (x *PlaceOrderRequest) Reset() {
 	*x = PlaceOrderRequest{}
-	mi := &file_iap_iap_proto_msgTypes[4]
+	mi := &file_iap_v1_iap_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -344,7 +344,7 @@ func (x *PlaceOrderRequest) String() string {
 func (*PlaceOrderRequest) ProtoMessage() {}
 
 func (x *PlaceOrderRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[4]
+	mi := &file_iap_v1_iap_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -357,7 +357,7 @@ func (x *PlaceOrderRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PlaceOrderRequest.ProtoReflect.Descriptor instead.
 func (*PlaceOrderRequest) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{4}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *PlaceOrderRequest) GetTaxRate() float64 {
@@ -405,7 +405,7 @@ type PlaceOrderResponse struct {
 
 func (x *PlaceOrderResponse) Reset() {
 	*x = PlaceOrderResponse{}
-	mi := &file_iap_iap_proto_msgTypes[5]
+	mi := &file_iap_v1_iap_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -417,7 +417,7 @@ func (x *PlaceOrderResponse) String() string {
 func (*PlaceOrderResponse) ProtoMessage() {}
 
 func (x *PlaceOrderResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[5]
+	mi := &file_iap_v1_iap_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -430,7 +430,7 @@ func (x *PlaceOrderResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PlaceOrderResponse.ProtoReflect.Descriptor instead.
 func (*PlaceOrderResponse) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{5}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *PlaceOrderResponse) GetSuccess() bool {
@@ -453,7 +453,7 @@ type GetInAppFeatureRequest struct {
 
 func (x *GetInAppFeatureRequest) Reset() {
 	*x = GetInAppFeatureRequest{}
-	mi := &file_iap_iap_proto_msgTypes[6]
+	mi := &file_iap_v1_iap_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -465,7 +465,7 @@ func (x *GetInAppFeatureRequest) String() string {
 func (*GetInAppFeatureRequest) ProtoMessage() {}
 
 func (x *GetInAppFeatureRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[6]
+	mi := &file_iap_v1_iap_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -478,7 +478,7 @@ func (x *GetInAppFeatureRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetInAppFeatureRequest.ProtoReflect.Descriptor instead.
 func (*GetInAppFeatureRequest) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{6}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *GetInAppFeatureRequest) GetExtensionName() string {
@@ -525,7 +525,7 @@ type GetInAppFeatureResponse struct {
 
 func (x *GetInAppFeatureResponse) Reset() {
 	*x = GetInAppFeatureResponse{}
-	mi := &file_iap_iap_proto_msgTypes[7]
+	mi := &file_iap_v1_iap_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -537,7 +537,7 @@ func (x *GetInAppFeatureResponse) String() string {
 func (*GetInAppFeatureResponse) ProtoMessage() {}
 
 func (x *GetInAppFeatureResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[7]
+	mi := &file_iap_v1_iap_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -550,7 +550,7 @@ func (x *GetInAppFeatureResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetInAppFeatureResponse.ProtoReflect.Descriptor instead.
 func (*GetInAppFeatureResponse) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{7}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *GetInAppFeatureResponse) GetPayload() *structpb.Struct {
@@ -570,7 +570,7 @@ type GetInAppPlansRequest struct {
 
 func (x *GetInAppPlansRequest) Reset() {
 	*x = GetInAppPlansRequest{}
-	mi := &file_iap_iap_proto_msgTypes[8]
+	mi := &file_iap_v1_iap_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -582,7 +582,7 @@ func (x *GetInAppPlansRequest) String() string {
 func (*GetInAppPlansRequest) ProtoMessage() {}
 
 func (x *GetInAppPlansRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[8]
+	mi := &file_iap_v1_iap_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -595,7 +595,7 @@ func (x *GetInAppPlansRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetInAppPlansRequest.ProtoReflect.Descriptor instead.
 func (*GetInAppPlansRequest) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{8}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *GetInAppPlansRequest) GetExtensionName() string {
@@ -621,7 +621,7 @@ type GetInAppPlansResponse struct {
 
 func (x *GetInAppPlansResponse) Reset() {
 	*x = GetInAppPlansResponse{}
-	mi := &file_iap_iap_proto_msgTypes[9]
+	mi := &file_iap_v1_iap_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -633,7 +633,7 @@ func (x *GetInAppPlansResponse) String() string {
 func (*GetInAppPlansResponse) ProtoMessage() {}
 
 func (x *GetInAppPlansResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[9]
+	mi := &file_iap_v1_iap_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -646,7 +646,7 @@ func (x *GetInAppPlansResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetInAppPlansResponse.ProtoReflect.Descriptor instead.
 func (*GetInAppPlansResponse) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{9}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *GetInAppPlansResponse) GetPlans() []*InAppPlan {
@@ -674,7 +674,7 @@ type InAppPlan struct {
 
 func (x *InAppPlan) Reset() {
 	*x = InAppPlan{}
-	mi := &file_iap_iap_proto_msgTypes[10]
+	mi := &file_iap_v1_iap_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -686,7 +686,7 @@ func (x *InAppPlan) String() string {
 func (*InAppPlan) ProtoMessage() {}
 
 func (x *InAppPlan) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[10]
+	mi := &file_iap_v1_iap_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -699,7 +699,7 @@ func (x *InAppPlan) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InAppPlan.ProtoReflect.Descriptor instead.
 func (*InAppPlan) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{10}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *InAppPlan) GetId() int32 {
@@ -786,7 +786,7 @@ type PriceModel struct {
 
 func (x *PriceModel) Reset() {
 	*x = PriceModel{}
-	mi := &file_iap_iap_proto_msgTypes[11]
+	mi := &file_iap_v1_iap_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -798,7 +798,7 @@ func (x *PriceModel) String() string {
 func (*PriceModel) ProtoMessage() {}
 
 func (x *PriceModel) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[11]
+	mi := &file_iap_v1_iap_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -811,7 +811,7 @@ func (x *PriceModel) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PriceModel.ProtoReflect.Descriptor instead.
 func (*PriceModel) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{11}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *PriceModel) GetVariant() string {
@@ -866,7 +866,7 @@ type PlanGroup struct {
 
 func (x *PlanGroup) Reset() {
 	*x = PlanGroup{}
-	mi := &file_iap_iap_proto_msgTypes[12]
+	mi := &file_iap_v1_iap_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -878,7 +878,7 @@ func (x *PlanGroup) String() string {
 func (*PlanGroup) ProtoMessage() {}
 
 func (x *PlanGroup) ProtoReflect() protoreflect.Message {
-	mi := &file_iap_iap_proto_msgTypes[12]
+	mi := &file_iap_v1_iap_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -891,7 +891,7 @@ func (x *PlanGroup) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PlanGroup.ProtoReflect.Descriptor instead.
 func (*PlanGroup) Descriptor() ([]byte, []int) {
-	return file_iap_iap_proto_rawDescGZIP(), []int{12}
+	return file_iap_v1_iap_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *PlanGroup) GetIdentifier() string {
@@ -908,21 +908,21 @@ func (x *PlanGroup) GetName() string {
 	return ""
 }
 
-var File_iap_iap_proto protoreflect.FileDescriptor
+var File_iap_v1_iap_proto protoreflect.FileDescriptor
 
-const file_iap_iap_proto_rawDesc = "" +
+const file_iap_v1_iap_proto_rawDesc = "" +
 	"\n" +
-	"\riap/iap.proto\x12\x03iap\x1a\x1cgoogle/protobuf/struct.proto\x1a\x14common/options.proto\"\xf3\x01\n" +
+	"\x10iap/v1/iap.proto\x12\x12transaction.iap.v1\x1a\x1cgoogle/protobuf/struct.proto\x1a\x14common/options.proto\"\xf3\x01\n" +
 	"\x16CalculateBasketRequest\x12%\n" +
 	"\x0eextension_name\x18\x01 \x01(\tR\rextensionName\x129\n" +
 	"\x19in_app_feature_identifier\x18\x02 \x01(\tR\x16inAppFeatureIdentifier\x12\x18\n" +
 	"\avariant\x18\x03 \x01(\tR\avariant\x12\x1a\n" +
 	"\blanguage\x18\x04 \x01(\tR\blanguage\x12\x16\n" +
 	"\x06domain\x18\x05 \x01(\tR\x06domain\x12)\n" +
-	"\x10shopware_version\x18\x06 \x01(\tR\x0fshopwareVersion\"g\n" +
+	"\x10shopware_version\x18\x06 \x01(\tR\x0fshopwareVersion\"v\n" +
 	"\x17CalculateBasketResponse\x12\x19\n" +
-	"\btax_rate\x18\x01 \x01(\x01R\ataxRate\x121\n" +
-	"\tpositions\x18\x02 \x03(\v2\x13.iap.BasketPositionR\tpositions\"\x97\x03\n" +
+	"\btax_rate\x18\x01 \x01(\x01R\ataxRate\x12@\n" +
+	"\tpositions\x18\x02 \x03(\v2\".transaction.iap.v1.BasketPositionR\tpositions\"\xa6\x03\n" +
 	"\x0eBasketPosition\x12%\n" +
 	"\x0eextension_name\x18\x01 \x01(\tR\rextensionName\x129\n" +
 	"\x19in_app_feature_identifier\x18\x02 \x01(\tR\x16inAppFeatureIdentifier\x12\x18\n" +
@@ -932,15 +932,15 @@ const file_iap_iap_proto_rawDesc = "" +
 	"\ttax_value\x18\x06 \x01(\x01R\btaxValue\x12\x1f\n" +
 	"\vgross_price\x18\a \x01(\x01R\n" +
 	"grossPrice\x12\x19\n" +
-	"\btax_rate\x18\b \x01(\x01R\ataxRate\x12M\n" +
-	"\x13subscription_change\x18\t \x01(\v2\x17.iap.SubscriptionChangeH\x00R\x12subscriptionChange\x88\x01\x01B\x16\n" +
+	"\btax_rate\x18\b \x01(\x01R\ataxRate\x12\\\n" +
+	"\x13subscription_change\x18\t \x01(\v2&.transaction.iap.v1.SubscriptionChangeH\x00R\x12subscriptionChange\x88\x01\x01B\x16\n" +
 	"\x14_subscription_change\"r\n" +
 	"\x12SubscriptionChange\x12\x12\n" +
 	"\x04type\x18\x01 \x01(\tR\x04type\x12H\n" +
-	"!current_in_app_feature_identifier\x18\x02 \x01(\tR\x1dcurrentInAppFeatureIdentifier\"\xc0\x01\n" +
+	"!current_in_app_feature_identifier\x18\x02 \x01(\tR\x1dcurrentInAppFeatureIdentifier\"\xcf\x01\n" +
 	"\x11PlaceOrderRequest\x12\x19\n" +
-	"\btax_rate\x18\x01 \x01(\x01R\ataxRate\x121\n" +
-	"\tpositions\x18\x02 \x03(\v2\x13.iap.BasketPositionR\tpositions\x12\x1a\n" +
+	"\btax_rate\x18\x01 \x01(\x01R\ataxRate\x12@\n" +
+	"\tpositions\x18\x02 \x03(\v2\".transaction.iap.v1.BasketPositionR\tpositions\x12\x1a\n" +
 	"\blanguage\x18\x03 \x01(\tR\blanguage\x12\x16\n" +
 	"\x06domain\x18\x04 \x01(\tR\x06domain\x12)\n" +
 	"\x10shopware_version\x18\x05 \x01(\tR\x0fshopwareVersion\".\n" +
@@ -956,9 +956,9 @@ const file_iap_iap_proto_rawDesc = "" +
 	"\apayload\x18\x01 \x01(\v2\x17.google.protobuf.StructR\apayload\"Y\n" +
 	"\x14GetInAppPlansRequest\x12%\n" +
 	"\x0eextension_name\x18\x01 \x01(\tR\rextensionName\x12\x1a\n" +
-	"\blanguage\x18\x02 \x01(\tR\blanguage\"=\n" +
-	"\x15GetInAppPlansResponse\x12$\n" +
-	"\x05plans\x18\x01 \x03(\v2\x0e.iap.InAppPlanR\x05plans\"\x96\x03\n" +
+	"\blanguage\x18\x02 \x01(\tR\blanguage\"L\n" +
+	"\x15GetInAppPlansResponse\x123\n" +
+	"\x05plans\x18\x01 \x03(\v2\x1d.transaction.iap.v1.InAppPlanR\x05plans\"\xc3\x03\n" +
 	"\tInAppPlan\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\x05R\x02id\x12\x1e\n" +
 	"\n" +
@@ -968,11 +968,11 @@ const file_iap_iap_proto_rawDesc = "" +
 	"\vdescription\x18\x04 \x01(\tR\vdescription\x122\n" +
 	"\x12service_conditions\x18\x05 \x01(\tH\x00R\x11serviceConditions\x88\x01\x01\x12$\n" +
 	"\vwebsite_gtc\x18\x06 \x01(\tH\x01R\n" +
-	"websiteGtc\x88\x01\x01\x122\n" +
-	"\fprice_models\x18\a \x03(\v2\x0f.iap.PriceModelR\vpriceModels\x120\n" +
-	"\vprice_model\x18\b \x01(\v2\x0f.iap.PriceModelR\n" +
-	"priceModel\x12$\n" +
-	"\x05group\x18\t \x01(\v2\x0e.iap.PlanGroupR\x05group\x12\x16\n" +
+	"websiteGtc\x88\x01\x01\x12A\n" +
+	"\fprice_models\x18\a \x03(\v2\x1e.transaction.iap.v1.PriceModelR\vpriceModels\x12?\n" +
+	"\vprice_model\x18\b \x01(\v2\x1e.transaction.iap.v1.PriceModelR\n" +
+	"priceModel\x123\n" +
+	"\x05group\x18\t \x01(\v2\x1d.transaction.iap.v1.PlanGroupR\x05group\x12\x16\n" +
 	"\x06status\x18\n" +
 	" \x01(\tR\x06statusB\x15\n" +
 	"\x13_service_conditionsB\x0e\n" +
@@ -991,66 +991,66 @@ const file_iap_iap_proto_rawDesc = "" +
 	"\n" +
 	"identifier\x18\x01 \x01(\tR\n" +
 	"identifier\x12\x12\n" +
-	"\x04name\x18\x02 \x01(\tR\x04name2\xe0\x05\n" +
+	"\x04name\x18\x02 \x01(\tR\x04name2\xd8\x06\n" +
 	"\n" +
-	"IAPService\x12L\n" +
-	"\x0fCalculateBasket\x12\x1b.iap.CalculateBasketRequest\x1a\x1c.iap.CalculateBasketResponse\x12=\n" +
+	"IAPService\x12j\n" +
+	"\x0fCalculateBasket\x12*.transaction.iap.v1.CalculateBasketRequest\x1a+.transaction.iap.v1.CalculateBasketResponse\x12[\n" +
 	"\n" +
-	"PlaceOrder\x12\x16.iap.PlaceOrderRequest\x1a\x17.iap.PlaceOrderResponse\x12L\n" +
-	"\x0fGetInAppFeature\x12\x1b.iap.GetInAppFeatureRequest\x1a\x1c.iap.GetInAppFeatureResponse\x12\xff\x01\n" +
-	"\rGetInAppPlans\x12\x19.iap.GetInAppPlansRequest\x1a\x1a.iap.GetInAppPlansResponse\"\xb6\x01\x92\xb5\x18@\n" +
+	"PlaceOrder\x12%.transaction.iap.v1.PlaceOrderRequest\x1a&.transaction.iap.v1.PlaceOrderResponse\x12j\n" +
+	"\x0fGetInAppFeature\x12*.transaction.iap.v1.GetInAppFeatureRequest\x1a+.transaction.iap.v1.GetInAppFeatureResponse\x12\x9d\x02\n" +
+	"\rGetInAppPlans\x12(.transaction.iap.v1.GetInAppPlansRequest\x1a).transaction.iap.v1.GetInAppPlansResponse\"\xb6\x01\x92\xb5\x18@\n" +
 	"\rauthorization\x1a/Not required - uses internal M2M authentication\x92\xb5\x18n\n" +
 	"\x11x-request-service\x10\x01\x1a@Service name making the request for tracking and log correlation\"\x15SwagPurchaseInterface\x1a\xf4\x01\x8a\xb5\x18x\n" +
 	"\rauthorization\x10\x01\x1a5OAuth access token (with or without 'Bearer ' prefix)\".Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...\x8a\xb5\x18t\n" +
-	"\fx-request-id\x1a>Request tracing ID for distributed tracing and log correlation\"$550e8400-e29b-41d4-a716-446655440000Bs\n" +
-	"\acom.iapB\bIapProtoP\x01Z2github.com/shopware/transaction-gateway-protos/iap\xa2\x02\x03IXX\xaa\x02\x03Iap\xca\x02\x03Iap\xe2\x02\x0fIap\\GPBMetadata\xea\x02\x03Iapb\x06proto3"
+	"\fx-request-id\x1a>Request tracing ID for distributed tracing and log correlation\"$550e8400-e29b-41d4-a716-446655440000B\xc9\x01\n" +
+	"\x16com.transaction.iap.v1B\bIapProtoP\x01Z;github.com/shopware/transaction-gateway-protos/iap/v1;iapv1\xa2\x02\x03TIX\xaa\x02\x12Transaction.Iap.V1\xca\x02\x12Transaction\\Iap\\V1\xe2\x02\x1eTransaction\\Iap\\V1\\GPBMetadata\xea\x02\x14Transaction::Iap::V1b\x06proto3"
 
 var (
-	file_iap_iap_proto_rawDescOnce sync.Once
-	file_iap_iap_proto_rawDescData []byte
+	file_iap_v1_iap_proto_rawDescOnce sync.Once
+	file_iap_v1_iap_proto_rawDescData []byte
 )
 
-func file_iap_iap_proto_rawDescGZIP() []byte {
-	file_iap_iap_proto_rawDescOnce.Do(func() {
-		file_iap_iap_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_iap_iap_proto_rawDesc), len(file_iap_iap_proto_rawDesc)))
+func file_iap_v1_iap_proto_rawDescGZIP() []byte {
+	file_iap_v1_iap_proto_rawDescOnce.Do(func() {
+		file_iap_v1_iap_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_iap_v1_iap_proto_rawDesc), len(file_iap_v1_iap_proto_rawDesc)))
 	})
-	return file_iap_iap_proto_rawDescData
+	return file_iap_v1_iap_proto_rawDescData
 }
 
-var file_iap_iap_proto_msgTypes = make([]protoimpl.MessageInfo, 13)
-var file_iap_iap_proto_goTypes = []any{
-	(*CalculateBasketRequest)(nil),  // 0: iap.CalculateBasketRequest
-	(*CalculateBasketResponse)(nil), // 1: iap.CalculateBasketResponse
-	(*BasketPosition)(nil),          // 2: iap.BasketPosition
-	(*SubscriptionChange)(nil),      // 3: iap.SubscriptionChange
-	(*PlaceOrderRequest)(nil),       // 4: iap.PlaceOrderRequest
-	(*PlaceOrderResponse)(nil),      // 5: iap.PlaceOrderResponse
-	(*GetInAppFeatureRequest)(nil),  // 6: iap.GetInAppFeatureRequest
-	(*GetInAppFeatureResponse)(nil), // 7: iap.GetInAppFeatureResponse
-	(*GetInAppPlansRequest)(nil),    // 8: iap.GetInAppPlansRequest
-	(*GetInAppPlansResponse)(nil),   // 9: iap.GetInAppPlansResponse
-	(*InAppPlan)(nil),               // 10: iap.InAppPlan
-	(*PriceModel)(nil),              // 11: iap.PriceModel
-	(*PlanGroup)(nil),               // 12: iap.PlanGroup
+var file_iap_v1_iap_proto_msgTypes = make([]protoimpl.MessageInfo, 13)
+var file_iap_v1_iap_proto_goTypes = []any{
+	(*CalculateBasketRequest)(nil),  // 0: transaction.iap.v1.CalculateBasketRequest
+	(*CalculateBasketResponse)(nil), // 1: transaction.iap.v1.CalculateBasketResponse
+	(*BasketPosition)(nil),          // 2: transaction.iap.v1.BasketPosition
+	(*SubscriptionChange)(nil),      // 3: transaction.iap.v1.SubscriptionChange
+	(*PlaceOrderRequest)(nil),       // 4: transaction.iap.v1.PlaceOrderRequest
+	(*PlaceOrderResponse)(nil),      // 5: transaction.iap.v1.PlaceOrderResponse
+	(*GetInAppFeatureRequest)(nil),  // 6: transaction.iap.v1.GetInAppFeatureRequest
+	(*GetInAppFeatureResponse)(nil), // 7: transaction.iap.v1.GetInAppFeatureResponse
+	(*GetInAppPlansRequest)(nil),    // 8: transaction.iap.v1.GetInAppPlansRequest
+	(*GetInAppPlansResponse)(nil),   // 9: transaction.iap.v1.GetInAppPlansResponse
+	(*InAppPlan)(nil),               // 10: transaction.iap.v1.InAppPlan
+	(*PriceModel)(nil),              // 11: transaction.iap.v1.PriceModel
+	(*PlanGroup)(nil),               // 12: transaction.iap.v1.PlanGroup
 	(*structpb.Struct)(nil),         // 13: google.protobuf.Struct
 }
-var file_iap_iap_proto_depIdxs = []int32{
-	2,  // 0: iap.CalculateBasketResponse.positions:type_name -> iap.BasketPosition
-	3,  // 1: iap.BasketPosition.subscription_change:type_name -> iap.SubscriptionChange
-	2,  // 2: iap.PlaceOrderRequest.positions:type_name -> iap.BasketPosition
-	13, // 3: iap.GetInAppFeatureResponse.payload:type_name -> google.protobuf.Struct
-	10, // 4: iap.GetInAppPlansResponse.plans:type_name -> iap.InAppPlan
-	11, // 5: iap.InAppPlan.price_models:type_name -> iap.PriceModel
-	11, // 6: iap.InAppPlan.price_model:type_name -> iap.PriceModel
-	12, // 7: iap.InAppPlan.group:type_name -> iap.PlanGroup
-	0,  // 8: iap.IAPService.CalculateBasket:input_type -> iap.CalculateBasketRequest
-	4,  // 9: iap.IAPService.PlaceOrder:input_type -> iap.PlaceOrderRequest
-	6,  // 10: iap.IAPService.GetInAppFeature:input_type -> iap.GetInAppFeatureRequest
-	8,  // 11: iap.IAPService.GetInAppPlans:input_type -> iap.GetInAppPlansRequest
-	1,  // 12: iap.IAPService.CalculateBasket:output_type -> iap.CalculateBasketResponse
-	5,  // 13: iap.IAPService.PlaceOrder:output_type -> iap.PlaceOrderResponse
-	7,  // 14: iap.IAPService.GetInAppFeature:output_type -> iap.GetInAppFeatureResponse
-	9,  // 15: iap.IAPService.GetInAppPlans:output_type -> iap.GetInAppPlansResponse
+var file_iap_v1_iap_proto_depIdxs = []int32{
+	2,  // 0: transaction.iap.v1.CalculateBasketResponse.positions:type_name -> transaction.iap.v1.BasketPosition
+	3,  // 1: transaction.iap.v1.BasketPosition.subscription_change:type_name -> transaction.iap.v1.SubscriptionChange
+	2,  // 2: transaction.iap.v1.PlaceOrderRequest.positions:type_name -> transaction.iap.v1.BasketPosition
+	13, // 3: transaction.iap.v1.GetInAppFeatureResponse.payload:type_name -> google.protobuf.Struct
+	10, // 4: transaction.iap.v1.GetInAppPlansResponse.plans:type_name -> transaction.iap.v1.InAppPlan
+	11, // 5: transaction.iap.v1.InAppPlan.price_models:type_name -> transaction.iap.v1.PriceModel
+	11, // 6: transaction.iap.v1.InAppPlan.price_model:type_name -> transaction.iap.v1.PriceModel
+	12, // 7: transaction.iap.v1.InAppPlan.group:type_name -> transaction.iap.v1.PlanGroup
+	0,  // 8: transaction.iap.v1.IAPService.CalculateBasket:input_type -> transaction.iap.v1.CalculateBasketRequest
+	4,  // 9: transaction.iap.v1.IAPService.PlaceOrder:input_type -> transaction.iap.v1.PlaceOrderRequest
+	6,  // 10: transaction.iap.v1.IAPService.GetInAppFeature:input_type -> transaction.iap.v1.GetInAppFeatureRequest
+	8,  // 11: transaction.iap.v1.IAPService.GetInAppPlans:input_type -> transaction.iap.v1.GetInAppPlansRequest
+	1,  // 12: transaction.iap.v1.IAPService.CalculateBasket:output_type -> transaction.iap.v1.CalculateBasketResponse
+	5,  // 13: transaction.iap.v1.IAPService.PlaceOrder:output_type -> transaction.iap.v1.PlaceOrderResponse
+	7,  // 14: transaction.iap.v1.IAPService.GetInAppFeature:output_type -> transaction.iap.v1.GetInAppFeatureResponse
+	9,  // 15: transaction.iap.v1.IAPService.GetInAppPlans:output_type -> transaction.iap.v1.GetInAppPlansResponse
 	12, // [12:16] is the sub-list for method output_type
 	8,  // [8:12] is the sub-list for method input_type
 	8,  // [8:8] is the sub-list for extension type_name
@@ -1058,29 +1058,29 @@ var file_iap_iap_proto_depIdxs = []int32{
 	0,  // [0:8] is the sub-list for field type_name
 }
 
-func init() { file_iap_iap_proto_init() }
-func file_iap_iap_proto_init() {
-	if File_iap_iap_proto != nil {
+func init() { file_iap_v1_iap_proto_init() }
+func file_iap_v1_iap_proto_init() {
+	if File_iap_v1_iap_proto != nil {
 		return
 	}
-	file_iap_iap_proto_msgTypes[2].OneofWrappers = []any{}
-	file_iap_iap_proto_msgTypes[10].OneofWrappers = []any{}
-	file_iap_iap_proto_msgTypes[11].OneofWrappers = []any{}
+	file_iap_v1_iap_proto_msgTypes[2].OneofWrappers = []any{}
+	file_iap_v1_iap_proto_msgTypes[10].OneofWrappers = []any{}
+	file_iap_v1_iap_proto_msgTypes[11].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_iap_iap_proto_rawDesc), len(file_iap_iap_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_iap_v1_iap_proto_rawDesc), len(file_iap_v1_iap_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   13,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_iap_iap_proto_goTypes,
-		DependencyIndexes: file_iap_iap_proto_depIdxs,
-		MessageInfos:      file_iap_iap_proto_msgTypes,
+		GoTypes:           file_iap_v1_iap_proto_goTypes,
+		DependencyIndexes: file_iap_v1_iap_proto_depIdxs,
+		MessageInfos:      file_iap_v1_iap_proto_msgTypes,
 	}.Build()
-	File_iap_iap_proto = out.File
-	file_iap_iap_proto_goTypes = nil
-	file_iap_iap_proto_depIdxs = nil
+	File_iap_v1_iap_proto = out.File
+	file_iap_v1_iap_proto_goTypes = nil
+	file_iap_v1_iap_proto_depIdxs = nil
 }

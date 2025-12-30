@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: auth/auth.proto
+// source: auth/v1/auth.proto
 
-package auth
+package authv1
 
 import (
 	_ "github.com/shopware/transaction-gateway-protos/common"
@@ -33,7 +33,7 @@ type ExchangeCodeRequest struct {
 
 func (x *ExchangeCodeRequest) Reset() {
 	*x = ExchangeCodeRequest{}
-	mi := &file_auth_auth_proto_msgTypes[0]
+	mi := &file_auth_v1_auth_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -45,7 +45,7 @@ func (x *ExchangeCodeRequest) String() string {
 func (*ExchangeCodeRequest) ProtoMessage() {}
 
 func (x *ExchangeCodeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_auth_auth_proto_msgTypes[0]
+	mi := &file_auth_v1_auth_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -58,7 +58,7 @@ func (x *ExchangeCodeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExchangeCodeRequest.ProtoReflect.Descriptor instead.
 func (*ExchangeCodeRequest) Descriptor() ([]byte, []int) {
-	return file_auth_auth_proto_rawDescGZIP(), []int{0}
+	return file_auth_v1_auth_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *ExchangeCodeRequest) GetAuthorizationCode() string {
@@ -86,7 +86,7 @@ type ExchangeCodeResponse struct {
 
 func (x *ExchangeCodeResponse) Reset() {
 	*x = ExchangeCodeResponse{}
-	mi := &file_auth_auth_proto_msgTypes[1]
+	mi := &file_auth_v1_auth_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -98,7 +98,7 @@ func (x *ExchangeCodeResponse) String() string {
 func (*ExchangeCodeResponse) ProtoMessage() {}
 
 func (x *ExchangeCodeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_auth_auth_proto_msgTypes[1]
+	mi := &file_auth_v1_auth_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -111,7 +111,7 @@ func (x *ExchangeCodeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExchangeCodeResponse.ProtoReflect.Descriptor instead.
 func (*ExchangeCodeResponse) Descriptor() ([]byte, []int) {
-	return file_auth_auth_proto_rawDescGZIP(), []int{1}
+	return file_auth_v1_auth_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *ExchangeCodeResponse) GetAccessToken() string {
@@ -144,7 +144,7 @@ type RefreshTokenRequest struct {
 
 func (x *RefreshTokenRequest) Reset() {
 	*x = RefreshTokenRequest{}
-	mi := &file_auth_auth_proto_msgTypes[2]
+	mi := &file_auth_v1_auth_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -156,7 +156,7 @@ func (x *RefreshTokenRequest) String() string {
 func (*RefreshTokenRequest) ProtoMessage() {}
 
 func (x *RefreshTokenRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_auth_auth_proto_msgTypes[2]
+	mi := &file_auth_v1_auth_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -169,7 +169,7 @@ func (x *RefreshTokenRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RefreshTokenRequest.ProtoReflect.Descriptor instead.
 func (*RefreshTokenRequest) Descriptor() ([]byte, []int) {
-	return file_auth_auth_proto_rawDescGZIP(), []int{2}
+	return file_auth_v1_auth_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *RefreshTokenRequest) GetRefreshToken() string {
@@ -190,7 +190,7 @@ type RefreshTokenResponse struct {
 
 func (x *RefreshTokenResponse) Reset() {
 	*x = RefreshTokenResponse{}
-	mi := &file_auth_auth_proto_msgTypes[3]
+	mi := &file_auth_v1_auth_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -202,7 +202,7 @@ func (x *RefreshTokenResponse) String() string {
 func (*RefreshTokenResponse) ProtoMessage() {}
 
 func (x *RefreshTokenResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_auth_auth_proto_msgTypes[3]
+	mi := &file_auth_v1_auth_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -215,7 +215,7 @@ func (x *RefreshTokenResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RefreshTokenResponse.ProtoReflect.Descriptor instead.
 func (*RefreshTokenResponse) Descriptor() ([]byte, []int) {
-	return file_auth_auth_proto_rawDescGZIP(), []int{3}
+	return file_auth_v1_auth_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *RefreshTokenResponse) GetAccessToken() string {
@@ -248,7 +248,7 @@ type GetUserAccountRequest struct {
 
 func (x *GetUserAccountRequest) Reset() {
 	*x = GetUserAccountRequest{}
-	mi := &file_auth_auth_proto_msgTypes[4]
+	mi := &file_auth_v1_auth_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -260,7 +260,7 @@ func (x *GetUserAccountRequest) String() string {
 func (*GetUserAccountRequest) ProtoMessage() {}
 
 func (x *GetUserAccountRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_auth_auth_proto_msgTypes[4]
+	mi := &file_auth_v1_auth_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -273,7 +273,7 @@ func (x *GetUserAccountRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetUserAccountRequest.ProtoReflect.Descriptor instead.
 func (*GetUserAccountRequest) Descriptor() ([]byte, []int) {
-	return file_auth_auth_proto_rawDescGZIP(), []int{4}
+	return file_auth_v1_auth_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *GetUserAccountRequest) GetAccessToken() string {
@@ -292,7 +292,7 @@ type GetUserAccountResponse struct {
 
 func (x *GetUserAccountResponse) Reset() {
 	*x = GetUserAccountResponse{}
-	mi := &file_auth_auth_proto_msgTypes[5]
+	mi := &file_auth_v1_auth_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -304,7 +304,7 @@ func (x *GetUserAccountResponse) String() string {
 func (*GetUserAccountResponse) ProtoMessage() {}
 
 func (x *GetUserAccountResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_auth_auth_proto_msgTypes[5]
+	mi := &file_auth_v1_auth_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -317,7 +317,7 @@ func (x *GetUserAccountResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetUserAccountResponse.ProtoReflect.Descriptor instead.
 func (*GetUserAccountResponse) Descriptor() ([]byte, []int) {
-	return file_auth_auth_proto_rawDescGZIP(), []int{5}
+	return file_auth_v1_auth_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *GetUserAccountResponse) GetUser() *structpb.Struct {
@@ -327,11 +327,11 @@ func (x *GetUserAccountResponse) GetUser() *structpb.Struct {
 	return nil
 }
 
-var File_auth_auth_proto protoreflect.FileDescriptor
+var File_auth_v1_auth_proto protoreflect.FileDescriptor
 
-const file_auth_auth_proto_rawDesc = "" +
+const file_auth_v1_auth_proto_rawDesc = "" +
 	"\n" +
-	"\x0fauth/auth.proto\x12\x04auth\x1a\x1cgoogle/protobuf/struct.proto\x1a\x14common/options.proto\"g\n" +
+	"\x12auth/v1/auth.proto\x12\x13transaction.auth.v1\x1a\x1cgoogle/protobuf/struct.proto\x1a\x14common/options.proto\"g\n" +
 	"\x13ExchangeCodeRequest\x12-\n" +
 	"\x12authorization_code\x18\x01 \x01(\tR\x11authorizationCode\x12!\n" +
 	"\fredirect_uri\x18\x02 \x01(\tR\vredirectUri\"}\n" +
@@ -350,44 +350,44 @@ const file_auth_auth_proto_rawDesc = "" +
 	"\x15GetUserAccountRequest\x12!\n" +
 	"\faccess_token\x18\x01 \x01(\tR\vaccessToken\"E\n" +
 	"\x16GetUserAccountResponse\x12+\n" +
-	"\x04user\x18\x01 \x01(\v2\x17.google.protobuf.StructR\x04user2\xe2\x02\n" +
-	"\vAuthService\x12E\n" +
-	"\fExchangeCode\x12\x19.auth.ExchangeCodeRequest\x1a\x1a.auth.ExchangeCodeResponse\x12E\n" +
-	"\fRefreshToken\x12\x19.auth.RefreshTokenRequest\x1a\x1a.auth.RefreshTokenResponse\x12K\n" +
-	"\x0eGetUserAccount\x12\x1b.auth.GetUserAccountRequest\x1a\x1c.auth.GetUserAccountResponse\x1ax\x8a\xb5\x18t\n" +
-	"\fx-request-id\x1a>Request tracing ID for distributed tracing and log correlation\"$550e8400-e29b-41d4-a716-446655440000Bz\n" +
-	"\bcom.authB\tAuthProtoP\x01Z3github.com/shopware/transaction-gateway-protos/auth\xa2\x02\x03AXX\xaa\x02\x04Auth\xca\x02\x04Auth\xe2\x02\x10Auth\\GPBMetadata\xea\x02\x04Authb\x06proto3"
+	"\x04user\x18\x01 \x01(\v2\x17.google.protobuf.StructR\x04user2\xbc\x03\n" +
+	"\vAuthService\x12c\n" +
+	"\fExchangeCode\x12(.transaction.auth.v1.ExchangeCodeRequest\x1a).transaction.auth.v1.ExchangeCodeResponse\x12c\n" +
+	"\fRefreshToken\x12(.transaction.auth.v1.RefreshTokenRequest\x1a).transaction.auth.v1.RefreshTokenResponse\x12i\n" +
+	"\x0eGetUserAccount\x12*.transaction.auth.v1.GetUserAccountRequest\x1a+.transaction.auth.v1.GetUserAccountResponse\x1ax\x8a\xb5\x18t\n" +
+	"\fx-request-id\x1a>Request tracing ID for distributed tracing and log correlation\"$550e8400-e29b-41d4-a716-446655440000B\xd1\x01\n" +
+	"\x17com.transaction.auth.v1B\tAuthProtoP\x01Z=github.com/shopware/transaction-gateway-protos/auth/v1;authv1\xa2\x02\x03TAX\xaa\x02\x13Transaction.Auth.V1\xca\x02\x13Transaction\\Auth\\V1\xe2\x02\x1fTransaction\\Auth\\V1\\GPBMetadata\xea\x02\x15Transaction::Auth::V1b\x06proto3"
 
 var (
-	file_auth_auth_proto_rawDescOnce sync.Once
-	file_auth_auth_proto_rawDescData []byte
+	file_auth_v1_auth_proto_rawDescOnce sync.Once
+	file_auth_v1_auth_proto_rawDescData []byte
 )
 
-func file_auth_auth_proto_rawDescGZIP() []byte {
-	file_auth_auth_proto_rawDescOnce.Do(func() {
-		file_auth_auth_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_auth_auth_proto_rawDesc), len(file_auth_auth_proto_rawDesc)))
+func file_auth_v1_auth_proto_rawDescGZIP() []byte {
+	file_auth_v1_auth_proto_rawDescOnce.Do(func() {
+		file_auth_v1_auth_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_auth_v1_auth_proto_rawDesc), len(file_auth_v1_auth_proto_rawDesc)))
 	})
-	return file_auth_auth_proto_rawDescData
+	return file_auth_v1_auth_proto_rawDescData
 }
 
-var file_auth_auth_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
-var file_auth_auth_proto_goTypes = []any{
-	(*ExchangeCodeRequest)(nil),    // 0: auth.ExchangeCodeRequest
-	(*ExchangeCodeResponse)(nil),   // 1: auth.ExchangeCodeResponse
-	(*RefreshTokenRequest)(nil),    // 2: auth.RefreshTokenRequest
-	(*RefreshTokenResponse)(nil),   // 3: auth.RefreshTokenResponse
-	(*GetUserAccountRequest)(nil),  // 4: auth.GetUserAccountRequest
-	(*GetUserAccountResponse)(nil), // 5: auth.GetUserAccountResponse
+var file_auth_v1_auth_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
+var file_auth_v1_auth_proto_goTypes = []any{
+	(*ExchangeCodeRequest)(nil),    // 0: transaction.auth.v1.ExchangeCodeRequest
+	(*ExchangeCodeResponse)(nil),   // 1: transaction.auth.v1.ExchangeCodeResponse
+	(*RefreshTokenRequest)(nil),    // 2: transaction.auth.v1.RefreshTokenRequest
+	(*RefreshTokenResponse)(nil),   // 3: transaction.auth.v1.RefreshTokenResponse
+	(*GetUserAccountRequest)(nil),  // 4: transaction.auth.v1.GetUserAccountRequest
+	(*GetUserAccountResponse)(nil), // 5: transaction.auth.v1.GetUserAccountResponse
 	(*structpb.Struct)(nil),        // 6: google.protobuf.Struct
 }
-var file_auth_auth_proto_depIdxs = []int32{
-	6, // 0: auth.GetUserAccountResponse.user:type_name -> google.protobuf.Struct
-	0, // 1: auth.AuthService.ExchangeCode:input_type -> auth.ExchangeCodeRequest
-	2, // 2: auth.AuthService.RefreshToken:input_type -> auth.RefreshTokenRequest
-	4, // 3: auth.AuthService.GetUserAccount:input_type -> auth.GetUserAccountRequest
-	1, // 4: auth.AuthService.ExchangeCode:output_type -> auth.ExchangeCodeResponse
-	3, // 5: auth.AuthService.RefreshToken:output_type -> auth.RefreshTokenResponse
-	5, // 6: auth.AuthService.GetUserAccount:output_type -> auth.GetUserAccountResponse
+var file_auth_v1_auth_proto_depIdxs = []int32{
+	6, // 0: transaction.auth.v1.GetUserAccountResponse.user:type_name -> google.protobuf.Struct
+	0, // 1: transaction.auth.v1.AuthService.ExchangeCode:input_type -> transaction.auth.v1.ExchangeCodeRequest
+	2, // 2: transaction.auth.v1.AuthService.RefreshToken:input_type -> transaction.auth.v1.RefreshTokenRequest
+	4, // 3: transaction.auth.v1.AuthService.GetUserAccount:input_type -> transaction.auth.v1.GetUserAccountRequest
+	1, // 4: transaction.auth.v1.AuthService.ExchangeCode:output_type -> transaction.auth.v1.ExchangeCodeResponse
+	3, // 5: transaction.auth.v1.AuthService.RefreshToken:output_type -> transaction.auth.v1.RefreshTokenResponse
+	5, // 6: transaction.auth.v1.AuthService.GetUserAccount:output_type -> transaction.auth.v1.GetUserAccountResponse
 	4, // [4:7] is the sub-list for method output_type
 	1, // [1:4] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name
@@ -395,26 +395,26 @@ var file_auth_auth_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_auth_auth_proto_init() }
-func file_auth_auth_proto_init() {
-	if File_auth_auth_proto != nil {
+func init() { file_auth_v1_auth_proto_init() }
+func file_auth_v1_auth_proto_init() {
+	if File_auth_v1_auth_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_auth_auth_proto_rawDesc), len(file_auth_auth_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_auth_v1_auth_proto_rawDesc), len(file_auth_v1_auth_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   6,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_auth_auth_proto_goTypes,
-		DependencyIndexes: file_auth_auth_proto_depIdxs,
-		MessageInfos:      file_auth_auth_proto_msgTypes,
+		GoTypes:           file_auth_v1_auth_proto_goTypes,
+		DependencyIndexes: file_auth_v1_auth_proto_depIdxs,
+		MessageInfos:      file_auth_v1_auth_proto_msgTypes,
 	}.Build()
-	File_auth_auth_proto = out.File
-	file_auth_auth_proto_goTypes = nil
-	file_auth_auth_proto_depIdxs = nil
+	File_auth_v1_auth_proto = out.File
+	file_auth_v1_auth_proto_goTypes = nil
+	file_auth_v1_auth_proto_depIdxs = nil
 }
