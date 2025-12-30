@@ -1,6 +1,6 @@
 {
   "name": "@shopware/transaction-gateway-client",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "auth/auth.js",
   "types": "auth/auth.d.ts",
   "peerDependencies": {
