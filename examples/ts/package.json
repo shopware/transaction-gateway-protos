@@ -1,0 +1,12 @@
+{
+  "name": "transaction-gateway-ts-example",
+  "version": "1.0.0",
+  "description": "Example usage of Transaction Gateway gRPC client in TypeScript",
+  "type": "module",
+  "main": "example.ts",
+  "dependencies": {
+    "@shopware/transaction-gateway-client": "git+https://github.com/shopware/transaction-gateway-protos.git#1.0.0+ts",
+    "@grpc/grpc-js": "^1.12.0",
+    "@bufbuild/protobuf": "^2.2.0"
+  }
+}

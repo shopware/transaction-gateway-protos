@@ -1,0 +1,16 @@
+{
+    "name": "shopware/transaction-gateway-php-example",
+    "description": "Example usage of Transaction Gateway gRPC client in PHP",
+    "type": "project",
+    "require": {
+        "shopware/transaction-gateway-client": "^1.0.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/shopware/transaction-gateway-protos"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
